@@ -34,7 +34,7 @@
     </label>&nbsp;  
     <a href="javascript:void(0);" onclick="SelectAllClicked()">全选</a>
     &nbsp;
-    <a href="javascript:void(0);" onclick="copyJSON()">复制</a>  
+    <a href="javascript:void(0);" onclick="copyJSON()">复制</a>   
     &nbsp;
     <span id="CollapsibleViewHolder" >
         <label for="CollapsibleView">
@@ -58,7 +58,7 @@
 
 <script type="text/javascript" src="m.js"></script>
 <script type="text/javascript">
-    function copyJSON()
+    function copyJSON() {
         var text = document.getElementById("Canvas").innerText;
         navigator.clipboard.writeText(text).then(function() {
             alert("已复制到剪贴板");
